@@ -1,0 +1,20 @@
+########################################
+#                                      #
+# This is aconfiguration file for the  #
+# CHARM Users Manipulation program.    #
+#                                      #
+########################################
+
+# This is a directory where custom scripts will be created
+scr_path=/home/blaz/Qt/CHARMUsers
+
+# This is a file that contains VMs which are 
+# distributed accross environments
+env_path=/home/blaz/Qt/CHARMUsers/environments
+
+# This is a users file
+# It contains usernames to add/remove/modify
+usr_path=/home/blaz/Qt/CHARMUsers/users
+
+# This is the IP of the jumphost
+jump_host=145.31.252.95

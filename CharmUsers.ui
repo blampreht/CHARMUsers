@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CharmUsers</class>
+ <widget class="QMainWindow" name="CharmUsers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CHARM Users Manipulation</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="gbKTC">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>290</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox { 
+	font:10pt &quot;URW Gothic L&quot;;
+	color: blue;
+	border: 2px groove rgb(220,220,220); 
+	border-radius: 5px; 
+	margin-top: 7px; 
+	margin-bottom: 7px; 
+	padding: 0px
+} 
+
+QGroupBox::title {
+	top:-7 ex;
+	left: 10px; 
+	subcontrol-origin: border
+}</string>
+    </property>
+    <property name="title">
+     <string>KTC Environments</string>
+    </property>
+    <widget class="QCheckBox" name="KTCProd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Production</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="KTCAcceptance">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Acceptance</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="KTCTraining">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>93</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Training</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="KTCStaging">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Staging</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="KTCJump">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Jump hosts</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lblEnvs01">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>441</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose the environments, where to create/remove/modify users:</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="gbCGI">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>290</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox { 
+	font:10pt &quot;URW Gothic L&quot;;
+	color: blue;
+	border: 2px groove rgb(220,220,220); 
+	border-radius: 5px; 
+	margin-top: 7px; 
+	margin-bottom: 7px; 
+	padding: 0px
+} 
+
+QGroupBox::title {
+	top:-7 ex;
+	left: 10px; 
+	subcontrol-origin: border
+}</string>
+    </property>
+    <property name="title">
+     <string>CGI Environments</string>
+    </property>
+    <widget class="QCheckBox" name="CGIProd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Production</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CGIAcceptance">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Acceptance</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CGITraining">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>93</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Training</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CGIStaging">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>30</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Staging</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CGIJump">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Jump hosts</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbOthers">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>290</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox { 
+	font:10pt &quot;URW Gothic L&quot;;
+	color: blue;
+	border: 2px groove rgb(220,220,220); 
+	border-radius: 5px; 
+	margin-top: 7px; 
+	margin-bottom: 7px; 
+	padding: 0px
+} 
+
+QGroupBox::title {
+	top:-7 ex;
+	left: 10px; 
+	subcontrol-origin: border
+}</string>
+    </property>
+    <property name="title">
+     <string>Other environments</string>
+    </property>
+    <widget class="QCheckBox" name="Sim">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Simulators</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="NFS">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NFS clusters</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbMGMT">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>200</y>
+      <width>290</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox { 
+	font:10pt &quot;URW Gothic L&quot;;
+	color: blue;
+	border: 2px groove rgb(220,220,220); 
+	border-radius: 5px; 
+	margin-top: 7px; 
+	margin-bottom: 7px; 
+	padding: 0px
+} 
+
+QGroupBox::title {
+	top:-7 ex;
+	left: 10px; 
+	subcontrol-origin: border
+}</string>
+    </property>
+    <property name="title">
+     <string>Management</string>
+    </property>
+    <widget class="QCheckBox" name="MGMTJump">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Jump hosts</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pbCrtScript">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>320</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create script</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbDeploy">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>380</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Deploy script</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblCrtScr">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Script name: </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leScrName">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>320</y>
+      <width>300</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblEnd">
+    <property name="geometry">
+     <rect>
+      <x>415</x>
+      <y>330</y>
+      <width>64</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.sh</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionE_xit"/>
+   </widget>
+   <widget class="QMenu" name="menu_File_2">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="action_Preferences"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_File_2"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Preferences">
+   <property name="text">
+    <string>&amp;Preferences</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionE_xit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

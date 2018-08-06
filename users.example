@@ -1,0 +1,22 @@
+#######################################################################
+#                                                                     #
+# This is a configuration file to either add, modify or remove users. #
+# It should be written in the following manner:                       #
+#                                                                     #
+# username:add/rm/mod:group(s) to add:group(s) to remove              #
+#                                                                     #
+# where:                                                              #
+#                                                                     #
+# username - username :)                                              #
+# add/rm/mod - you would like to either add, remove or modify user    #
+# group(s) to add - add the user to these groups  or anything else    #
+# group(s) to remove - remove user from these groups                  #
+#                                                                     #
+# groups are comma separated                                          #
+#                                                                     #
+#######################################################################
+
+# Example:
+SnowJoh_ext:add:cgisudo:none
+LamprBl_ext:mod:none:sntsudo
+GrahLuk_ext:rm:none:none     ## if rm specified, groups do not apply

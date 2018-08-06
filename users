@@ -1,0 +1,80 @@
+#######################################################################
+#                                                                     #
+# This is a configuration file to either add, modify or remove users. #
+# It should be written in the following manner:                       #
+#                                                                     #
+# username:add/rm/mod:group(s) to add                                 #
+#                                                                     #
+# where:                                                              #
+#                                                                     #
+# username - username :)                                              #
+# add/rm/mod - you would like to either add, remove or modify user    #
+# group(s) to add - add the user to these groups  or anything else    #
+# No removal of groups - do this with custom command                  #
+#                                                                     #
+# groups are comma separated                                          #
+#                                                                     #
+# Custom command example:                                             #
+# username:usermod -G burek,krneki                                    #
+#                                                                     #
+#######################################################################
+
+# Example:
+AllenBr_ext:id
+ArabiMa_ext:id
+ArichJa_ext:id
+BecksDa_ext:id
+BoedhRa_ext:id
+BoeijMa_ext:id
+BradlCo_ext:id
+BrownJa_ext:id
+CarrBen_ext:id
+ChintNa_ext:id
+CoanAnd_ext:id
+CoxThuy_ext:id
+DammHe_ext:id
+DendyMi_ext:id
+EshunGe_ext:id
+FaircCh_ext:id
+FaustJt_ext:id
+GodfrSt_ext:id
+GoelaZa_ext:id
+HardiCo_ext:id
+HilhoRi_ext:id
+HopewBr_ext:id
+KosteKe_ext:id                                                                                                                                                   
+KowalWo_ext:id                                                                                                                                                   
+LelivSt_ext:id                                                                                                                                                   
+LupinRo_ext:id                                                                                                                                                   
+MccarRy_ext:id                                                                                                                                                   
+MilMaur_ext:id                                                                                                                                                   
+MrazChu_ext:id
+MuellJa_ext:id
+MuldeJe_ext:id
+NguyeSh_ext:id
+PendeCr_ext:id
+PlaatWi_ext:id
+PoosaSr_ext:id
+PyleJos_ext:id
+RoulaEa_ext:id
+ShaoCla_ext:id
+SiemoRe_ext:id
+SmithJu_ext:id
+SteenGe_ext:id
+StienBe_ext:id
+TalleCh_ext:id
+TatumRa_ext:id
+TrailJu_ext:id
+TrussJa_ext:id
+UsiriNa_ext:id
+VanriMa_ext:id
+VargaJo_ext:id
+VenneGu_ext:id
+VerbuHe_ext:id
+VerstAn_ext:id
+WestMar_ext:id
+WetzlMa_ext:id
+WilliCa_ext:id
+WinteBr_ext:id
+WittrKr_ext:id
+ZimmeBr_ext:id
